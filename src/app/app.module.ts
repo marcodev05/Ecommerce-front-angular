@@ -13,6 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ProductModule } from './products/product.module';
 import { MaterialModule } from './core/modules/material/material.module';
+import { CategoryListComponent } from './categories/category-list/category-list.component';
+import { CategoryModule } from './categories/category.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { MaterialModule } from './core/modules/material/material.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     ProductModule,
-    MaterialModule
+    MaterialModule,
+    CategoryModule
     
   ],
   providers: [],

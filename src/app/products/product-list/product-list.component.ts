@@ -16,10 +16,10 @@ export class ProductListComponent implements OnInit {
     map(({ matches }) => {
       if (matches) {
         return [
-          { title: 'Card 1', cols: 4, rows: 1 },
-          { title: 'Card 2', cols: 4, rows: 1 },
-          { title: 'Card 3', cols: 4, rows: 1 },
-          { title: 'Card 4', cols: 4, rows: 1 }
+          { title: 'Card 1', cols: 3, rows: 1 },
+          { title: 'Card 2', cols: 3, rows: 1 },
+          { title: 'Card 3', cols: 3, rows: 1 },
+          { title: 'Card 4', cols: 3, rows: 1 }
         ];
       }
 
