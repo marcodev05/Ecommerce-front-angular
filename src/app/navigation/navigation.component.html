@@ -1,8 +1,10 @@
-<div class="container">
+<app-header></app-header>
+
+<div class="container body-container">
 
 
   <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #drawer class="sidenav" fixedInViewport
+    <!-- <mat-sidenav #drawer class="sidenav" 
         [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
         [mode]="(isHandset$ | async) ? 'over' : 'side'"
         [opened]="(isHandset$ | async) === false">
@@ -10,12 +12,11 @@
       <mat-nav-list>
         <a mat-list-item routerLink="products">Produits</a>
         <a mat-list-item routerLink="categories">Categories</a>
-        <a mat-list-item routerLink="details">Details</a>
         <a mat-list-item routerLink="#">Apropos</a>
       </mat-nav-list>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <mat-toolbar class="bg-success">
+    </mat-sidenav> -->
+    <mat-sidenav-content class="main-content">
+      <!-- <mat-toolbar class="bg-light">
         <button
           type="button"
           aria-label="Toggle sidenav"
@@ -27,12 +28,13 @@
         <span >Nearby Shop</span>
   
   
-      </mat-toolbar>
+      </mat-toolbar> -->
 
+      <main>
 
-
-  <router-outlet></router-outlet>
+       <router-outlet></router-outlet>
     
+      </main>
    
   
  
@@ -45,4 +47,6 @@
 
 
 </div>
+
+
 

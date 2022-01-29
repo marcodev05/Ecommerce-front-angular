@@ -15,11 +15,18 @@ import { ProductModule } from './products/product.module';
 import { MaterialModule } from './core/modules/material/material.module';
 import { CategoryListComponent } from './categories/category-list/category-list.component';
 import { CategoryModule } from './categories/category.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './core/layout/header/header.component';
+import { HomeComponent } from './home/home.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavigationComponent
+    NavigationComponent,
+    HeaderComponent,
+    HomeComponent
+
  
   ],
   imports: [
@@ -28,7 +35,8 @@ import { CategoryModule } from './categories/category.module';
     BrowserAnimationsModule,
     ProductModule,
     MaterialModule,
-    CategoryModule
+    CategoryModule,
+    ReactiveFormsModule
     
   ],
   providers: [],

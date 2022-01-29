@@ -1,0 +1,54 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+.bg-cover {
+    background-size: cover !important;
+  }
+
+
+
+
+
+
+.aa-header .aa-header-content {
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+}
+.text-white {
+    color: #fff !important;
+}
+.text-left {
+    text-align: left!important;
+}
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.aa-header {
+  background-image: url("../../../../assets/images/home-image.jpg");
+  position: relative;
+  background-size: cover;
+  min-height: 600px;
+}
+
+  .container {
+      max-width: 720px;
+  }
+  
+  
+  .container {
+      max-width: 540px;
+  }
+  
+
+  
+
+
+
+  

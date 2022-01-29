@@ -11,7 +11,6 @@ import { CategoryService } from '../shared/services/category.service';
 export class CategoryListComponent implements OnInit {
 
   public categories: Category[] = [];
-  public test = "";
 
   constructor(private categoryService: CategoryService) { }
 

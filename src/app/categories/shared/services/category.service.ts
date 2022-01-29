@@ -19,12 +19,12 @@ export class CategoryService {
 
 
   public addCategory(category: Category): Observable<Category> {
-    return this.http.post<Category>('${this.apiServerUrl}/add', category);
+    return this.http.post<Category>(this.apiBaseUrl + "/admin/v1/categories/add", category);
   }
 
 
-  public getCategoryById(id: string): Observable<Category> {
-    return this.http.get<Category>('${this.apiServerUrl}/categories/${id}');
+  public getCategoryById(id: number): Observable<Category> {
+    return this.http.get<Category>(this.apiBaseUrl + "/api/v1/categories/" + id);
   }
 
 }
